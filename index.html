@@ -59,7 +59,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="lede">Stellar Chat</p>
-<p class="updated">Last updated: 19 September 2026</p>
+<p class="updated">Last updated: 3 October 2026</p>
 
 <p>
   This policy explains what Stellar Chat collects, why, and what you can do
@@ -84,7 +84,25 @@
   <tr><td>Email address</td><td>Account recovery and contact. Optional for Google and Facebook sign-ups.</td></tr>
   <tr><td>Password</td><td>Stored only as a cryptographic hash. We cannot read it.</td></tr>
   <tr><td>Profile photo and status text</td><td>Shown on your profile.</td></tr>
+  <tr><td>Business account details</td><td>If you open a business account: its name, category, description, logo and photos, address and map location, opening hours, phone, website and social links, services and prices, and what you tell its AI front desk. Shown publicly so customers can find and contact the business.</td></tr>
 </table>
+
+<h3>Posts, stories and activity</h3>
+<ul>
+  <li><strong>Videos and shorts</strong> you post, with their title and caption, and the approximate location they were posted from (or the business's location, if you tag one), so they can appear in "Near me" feeds. Other users see an approximate distance, not the location itself.</li>
+  <li><strong>Stories</strong>, including text, stickers and music added to them, and the highlights you keep on your profile.</li>
+  <li><strong>Comments, likes, views and shares</strong> on posts and stories, who you <strong>follow</strong> and who follows you, and the activity notifications these create.</li>
+  <li><strong>Reports and blocks</strong> you make, and reports other people make about you or your content.</li>
+</ul>
+
+<h3>Business bookings and conversations</h3>
+<p>
+  If you message a business or book with it, the conversation and the
+  booking (service, time, the name and phone number given for it, and any
+  note) are stored and shared with that business and its staff. Messages to
+  a business may be answered by its AI front desk and translated between
+  languages — see "Who else receives data" below.
+</p>
 
 <h3>Content you send</h3>
 <p>
@@ -103,7 +121,8 @@
 
 <h3>Information collected automatically</h3>
 <ul>
-  <li>A push notification token, so we can alert you to messages and calls.</li>
+  <li>A push notification token (from Google Firebase Cloud Messaging, or Apple's push service on iPhone), so we can alert you to messages and calls.</li>
+  <li>Your <strong>approximate location</strong>, sent with requests for the "Near me" video feed and for nearby businesses while you use them, to find what is close to you. It is used to answer that request, and is only stored when you post a video (see above).</li>
   <li>Whether you are currently online, shown to your contacts.</li>
   <li>Your muted, blocked, favourite and locked chat lists.</li>
   <li>Basic technical information needed to deliver messages and calls.</li>
@@ -119,17 +138,25 @@
   <tr><td>Camera</td><td>Video calls, and taking photos or videos to send.</td></tr>
   <tr><td>Microphone</td><td>Voice and video calls, and voice messages.</td></tr>
   <tr><td>Photos and files</td><td>Choosing media and documents to send.</td></tr>
-  <tr><td>Contacts</td><td>Picking one contact to share in a chat, and saving a contact someone shares with you.</td></tr>
-  <tr><td>Location</td><td>Sharing your location in a chat, and finding nearby businesses.</td></tr>
+  <tr><td>Contacts</td><td>Finding which of your contacts use Stellar Chat (see below), picking one contact to share in a chat, and saving a contact someone shares with you.</td></tr>
+  <tr><td>Location</td><td>Your precise location when you share it in a chat or set a business's address from where you are; your approximate location for the "Near me" feed, nearby businesses, and the videos you post.</td></tr>
   <tr><td>Notifications</td><td>Alerting you to messages and incoming calls.</td></tr>
   <tr><td>Biometrics</td><td>Unlocking the app or a locked chat, if you turn that on.</td></tr>
 </table>
 
 <div class="note">
-  <strong>We do not upload your contact list.</strong> When you share a
-  contact, your device shows you a picker and only the single contact you
-  choose is sent, as part of that message. Your address book never leaves
-  your phone.
+  <strong>How contacts are used.</strong> To find which of your contacts use
+  Stellar Chat, and to let people whose numbers you have saved start a chat
+  with you, the app uploads the phone numbers in your address book (and, on
+  Android, on your SIM card) as <strong>one-way SHA-256 hashes</strong> — not
+  as readable numbers. Names, photos, emails and other contact details are
+  <strong>not uploaded</strong>. The app explains this and asks before it
+  requests the contacts permission; you can choose "Not now" or refuse the
+  permission and still use Stellar Chat, though people who have your number
+  will then need to follow you before they can message you. When you share a
+  single contact in a chat, only that contact's name and number are sent, as
+  part of the message. The hashes are replaced each time the app syncs, and
+  deleted with your account.
 </div>
 
 <h2>Who else receives data</h2>
@@ -139,7 +166,7 @@
 </p>
 <table>
   <tr><th>Service</th><th>What it receives</th></tr>
-  <tr><td>Google Firebase</td><td>Your phone number for SMS verification; a push token for notifications.</td></tr>
+  <tr><td>Google Firebase</td><td>Your phone number for SMS verification; a push token, and the notifications sent to it (such as the sender's name and a preview of the message), for push notifications.</td></tr>
   <tr><td>Cloudinary</td><td>Photos, videos, voice notes and documents you send.</td></tr>
   <tr><td>MongoDB Atlas</td><td>Your account record and your messages.</td></tr>
   <tr><td>Render</td><td>Hosts our server; processes data passing through it.</td></tr>
@@ -147,13 +174,16 @@
   <tr><td>Meta (Facebook Login)</td><td>Your Facebook account identifier, if you sign in that way.</td></tr>
   <tr><td>LiveKit</td><td>Audio and video streams during group calls.</td></tr>
   <tr><td>Klipy</td><td>Your search terms when you search for a GIF.</td></tr>
-  <tr><td>Anthropic</td><td>Text you send to the AI assistant, or ask it about.</td></tr>
+  <tr><td>Anthropic</td><td>Text you send to the AI assistant, or a message you ask it about; messages customers send to a business's AI front desk, with the business's own information, so it can reply and translate.</td></tr>
+  <tr><td>Google Translate</td><td>The text of a message you choose to translate in a chat.</td></tr>
+  <tr><td>OpenStreetMap</td><td>Requests for map tiles when a shared location is shown, which reveal the general area on screen and your IP address.</td></tr>
 </table>
 
 <div class="note">
   <strong>About the AI assistant.</strong> When you use the AI assistant, or
   ask it about a message, the text involved is sent to Anthropic to generate a
-  reply. Do not put anything in it you would not want processed by a third
+  reply. The same applies to a business's AI front desk: what customers write
+  to the business is sent to Anthropic so the desk can answer it. Do not put anything in it you would not want processed by a third
   party. The assistant is optional — the rest of the app works without it.
 </div>
 
@@ -171,12 +201,16 @@
   You can delete your Stellar Chat account and everything in it at any time.
 </p>
 <ul>
-  <li><strong>In the app:</strong> Settings → Account → Delete account.</li>
+  <li><strong>In the app:</strong> Settings → Delete account.</li>
   <li><strong>By email:</strong> write to the address at the top of this policy from the email on your account, or tell us the phone number registered to it.</li>
 </ul>
 <p>
-  Deleting removes your profile, your uploaded media, your push token, and
-  your one-to-one conversations. Because a conversation is stored once and
+  Deleting removes your profile, your push token, your uploaded contact
+  hashes, your videos, stories and highlights, your comments and likes, your
+  follows, your bookings and business conversations, any business you own,
+  and your one-to-one conversations. Media files you uploaded are no longer
+  linked to you or shown anywhere in the app; if you also want the stored
+  files themselves erased from our media host, email us. Because a conversation is stored once and
   shared by both people rather than copied to each, deleting your account
   also removes those conversations from the other person's chat list.
 </p>
@@ -231,6 +265,7 @@
   Osama Abuhmeidan<br>
   <strong><a href="mailto:osamaabuhmeidan79@gmail.com">osamaabuhmeidan79@gmail.com</a></strong>
 </p>
+<p><a href="terms.html">Terms of Use</a></p>
 
 </main>
 </body>
