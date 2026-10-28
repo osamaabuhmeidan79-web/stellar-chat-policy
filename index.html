@@ -59,7 +59,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="lede">Stellar Chat</p>
-<p class="updated">Last updated: 7 October 2026</p>
+<p class="updated">Last updated: 28 October 2026</p>
 
 <p>
   This policy explains what Stellar Chat collects, why, and what you can do
@@ -109,14 +109,24 @@
   Messages, voice notes, photos, videos, documents, and locations you choose
   to share are stored so they can be delivered and so you can see them again
   later. Media files are stored with our hosting provider; message records are
-  stored in our database.
+  stored in our database. In personal chats and groups they are stored as
+  locked envelopes and locked files that only the phones in the conversation
+  can open.
 </p>
 
 <div class="note">
-  <strong>Messages are not end-to-end encrypted.</strong> They are encrypted
-  in transit, and access to our servers is restricted, but we are technically
-  able to access message content. Please do not use Stellar Chat for
-  information that requires end-to-end encryption.
+  <strong>Personal chats and groups are end-to-end encrypted.</strong>
+  Messages, voice notes, photos, videos and documents in personal chats and
+  groups are locked on your phone with keys that only the phones in the
+  conversation hold, and opened only on those phones. Our servers store and
+  deliver the locked envelopes but cannot read them, and we keep no way to.
+  One-to-one calls are end-to-end encrypted between the two phones. A group
+  call is end-to-end encrypted when every member's app supports it; the call
+  screen shows a lock, or a warning when it does not. Chats with Stellar AI,
+  a business's AI front desk, posts, stories, Flicks and comments are
+  encrypted between your phone and our servers and are readable by us as
+  described below. If you lose your phone and have no encrypted backup, your
+  locked messages cannot be recovered by us.
 </div>
 
 <h3>Information collected automatically</h3>
@@ -167,9 +177,9 @@
 </p>
 <table>
   <tr><th>Service</th><th>What it receives</th></tr>
-  <tr><td>Google Firebase</td><td>Your phone number for SMS verification; a push token, and the notifications sent to it (such as the sender's name and a preview of the message), for push notifications.</td></tr>
+  <tr><td>Google Firebase</td><td>Your phone number for SMS verification; a push token, and the notifications sent to it (the sender's name; in personal chats and groups the preview is locked and opened on your phone), for push notifications.</td></tr>
   <tr><td>Cloudinary</td><td>Photos, videos, voice notes and documents you send.</td></tr>
-  <tr><td>MongoDB Atlas</td><td>Your account record and your messages.</td></tr>
+  <tr><td>MongoDB Atlas</td><td>Your account record and your messages (in personal chats and groups, locked envelopes we cannot open).</td></tr>
   <tr><td>Render</td><td>Hosts our server; processes data passing through it.</td></tr>
   <tr><td>Google Sign-In</td><td>Your Google account identifier, if you sign in that way.</td></tr>
   <tr><td>Meta (Facebook Login)</td><td>Your Facebook account identifier, if you sign in that way.</td></tr>
@@ -243,7 +253,8 @@
 
 <h2>Security</h2>
 <p>
-  Data is encrypted in transit. Passwords are hashed and never stored in a
+  Personal chats and groups are end-to-end encrypted, as described above.
+  All data is encrypted in transit. Passwords are hashed and never stored in a
   readable form. Access to our systems is limited. No service can promise
   perfect security, and we have described above what this app does and does not
   protect against.
