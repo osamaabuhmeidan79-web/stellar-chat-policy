@@ -59,7 +59,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="lede">Stellar Chat</p>
-<p class="updated">Last updated: 28 October 2026</p>
+<p class="updated">Last updated: 13 November 2026</p>
 
 <p>
   This policy explains what Stellar Chat collects, why, and what you can do
@@ -136,6 +136,7 @@
   <li>Whether you are currently online, shown to your contacts.</li>
   <li>Your muted, blocked, favourite and locked chat lists.</li>
   <li>Basic technical information needed to deliver messages and calls.</li>
+  <li><strong>Crash reports</strong> — if the app crashes, the next time it opens it sends what went wrong (the technical stack), the phone model, system version and app version, the app's own technical log lines from just before the crash (written without names or phone numbers, and any number long enough to be one is removed before sending), and your account's database id, so a crash can be matched to the person who reports it. Nothing you wrote or sent is included. Used only to fix crashes.</li>
   <li><strong>Anonymous call performance data</strong> — during voice and video calls, the app records every 20 seconds how warm the phone is (its heat level), how much processor and memory Stellar Chat uses, and call quality figures (video size, frame rate, connection quality), with the phone model, system version and app version. It is sent once when the call ends, is not linked to your account, name or phone number, contains nothing you said or showed, and is used only to make calls work better. It is deleted after 30 days.</li>
 </ul>
 
@@ -177,6 +178,7 @@
 </p>
 <table>
   <tr><th>Service</th><th>What it receives</th></tr>
+  <tr><td>Google Firebase Crashlytics</td><td>Crash reports, as described above.</td></tr>
   <tr><td>Google Firebase</td><td>Your phone number for SMS verification; a push token, and the notifications sent to it (the sender's name; in personal chats and groups the preview is locked and opened on your phone), for push notifications.</td></tr>
   <tr><td>Cloudinary</td><td>Photos, videos, voice notes and documents you send.</td></tr>
   <tr><td>MongoDB Atlas</td><td>Your account record and your messages (in personal chats and groups, locked envelopes we cannot open).</td></tr>
@@ -203,6 +205,7 @@
 <ul>
   <li><strong>Messages and media</strong> — until you delete them, or until you delete your account.</li>
   <li><strong>Account details</strong> — for as long as your account exists.</li>
+  <li><strong>Crash reports</strong> — 90 days (Firebase Crashlytics keeps them that long).</li>
   <li><strong>Anonymous call performance data</strong> — 30 days.</li>
   <li><strong>Deleted account data</strong> — removed from our live systems within 30 days. Backups may retain it for up to 90 days before being overwritten.</li>
 </ul>
